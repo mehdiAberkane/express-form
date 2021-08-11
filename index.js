@@ -3,7 +3,7 @@ const fileUpload = require('express-fileupload')
 const path = require('path')
 const bodyParser = require('body-parser')
 const app = express()
-const port = 80
+const port = process.env.PORT || 80;
 
 app.use(fileUpload({
   createParentPath: true
